@@ -1,0 +1,166 @@
+{
+  "date": "2026-11-12",
+  "mobile": [
+    {
+      "route": "index.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "a-liga.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "atividades.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "caderno.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "diretoria.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "participar.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "contato.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "privacidade.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "artigo-onde-buscar-artigos.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "artigo-organizar-leitura-cientifica.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "artigo-primeira-busca-pubmed.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    },
+    {
+      "route": "404.html",
+      "brokenImages": [],
+      "h1": 1,
+      "pageWidth": 390,
+      "viewport": 390
+    }
+  ],
+  "additional": [
+    {
+      "route": "index.html",
+      "pageWidth": 320,
+      "viewport": 320
+    },
+    {
+      "route": "caderno.html",
+      "pageWidth": 320,
+      "viewport": 320
+    },
+    {
+      "route": "participar.html",
+      "pageWidth": 320,
+      "viewport": 320
+    },
+    {
+      "route": "artigo-primeira-busca-pubmed.html",
+      "pageWidth": 320,
+      "viewport": 320
+    },
+    {
+      "route": "contato.html",
+      "pageWidth": 320,
+      "viewport": 320
+    },
+    {
+      "route": "index.html",
+      "pageWidth": 768,
+      "viewport": 768
+    },
+    {
+      "route": "caderno.html",
+      "pageWidth": 768,
+      "viewport": 768
+    },
+    {
+      "route": "participar.html",
+      "pageWidth": 768,
+      "viewport": 768
+    },
+    {
+      "route": "artigo-primeira-busca-pubmed.html",
+      "pageWidth": 768,
+      "viewport": 768
+    },
+    {
+      "route": "contato.html",
+      "pageWidth": 768,
+      "viewport": 768
+    },
+    {
+      "route": "index.html",
+      "pageWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "route": "caderno.html",
+      "pageWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "route": "participar.html",
+      "pageWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "route": "artigo-primeira-busca-pubmed.html",
+      "pageWidth": 1280,
+      "viewport": 1280
+    },
+    {
+      "route": "contato.html",
+      "pageWidth": 1280,
+      "viewport": 1280
+    }
+  ]
+}

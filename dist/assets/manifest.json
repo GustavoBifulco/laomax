@@ -1,0 +1,19 @@
+{
+  "created": "2026-11-12",
+  "logoOriginal": {
+    "path": "assets/images/laomax-selo-original.png",
+    "sha256": "8294a8588939c372e9c3b18fefee93ae97fee3871eff77499f22e90ec914ce3e",
+    "source": "Arquivo fornecido pelo usuário, preservado sem alteração"
+  },
+  "photography": {
+    "path": "assets/images/odontologia.jpg",
+    "source": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=85",
+    "usage": "Ilustrativa, não representa atividade LAOMAX",
+    "license": "https://unsplash.com/license",
+    "individualAttribution": "A confirmar antes do lançamento"
+  },
+  "fonts": {
+    "DM Sans": "SIL Open Font License; licença em assets/fonts/DM-Sans-LICENSE.txt",
+    "Libre Caslon Display": "SIL Open Font License; licença em assets/fonts/Libre-Caslon-Display-LICENSE.txt"
+  }
+}

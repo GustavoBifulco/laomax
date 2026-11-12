@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "onde-buscar-artigos",
+    "category": "Pesquisa",
+    "title": "Por onde começar a sua pesquisa científica?",
+    "description": "PubMed e SciELO: dois pontos de partida para explorar a literatura em Odontologia.",
+    "minutes": 3,
+    "art": "search",
+    "sections": [
+      { "title": "Comece com uma pergunta", "text": "Antes de abrir uma base de dados, escreva o que você deseja investigar. Separe o tema em conceitos e anote palavras que podem aparecer nos títulos e resumos. Uma pergunta delimitada ajuda a organizar a leitura." },
+      { "title": "Explore o PubMed", "text": "O PubMed permite pesquisar referências da literatura biomédica. Comece pelos conceitos principais, experimente termos em inglês e consulte os filtros de data e tipo de publicação quando fizer sentido para sua pergunta. Um resultado indexado não é, por si só, garantia de qualidade ou de aplicabilidade." },
+      { "title": "Conheça a SciELO", "text": "A SciELO reúne coleções de periódicos científicos e oferece busca de artigos. Explore palavras em português e em inglês. Abra a página do periódico e registre o endereço do artigo para voltar à publicação original." },
+      { "title": "Guarde o caminho da busca", "text": "Registre a base consultada, a data, os termos e os filtros utilizados. Salve título, autores, ano e DOI, quando disponível. Esse pequeno hábito torna seu estudo mais organizado e ajuda outras pessoas a compreenderem como você encontrou o material." }
+    ],
+    "sources": [
+      { "label": "NLM — Guia oficial do PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/help/" },
+      { "label": "SciELO — Biblioteca científica", "url": "https://www.scielo.org/" }
+    ]
+  },
+  {
+    "slug": "organizar-leitura-cientifica",
+    "category": "Vida acadêmica",
+    "title": "Da leitura às boas perguntas.",
+    "description": "Um roteiro simples para organizar seu fichamento e levar uma discussão melhor para o grupo.",
+    "minutes": 3,
+    "art": "reading",
+    "sections": [
+      { "title": "Identifique a publicação", "text": "Anote a referência completa e o link de acesso antes de começar. Separe o que os autores escreveram das suas próprias interpretações. Se transcrever uma frase, use aspas e registre a página." },
+      { "title": "Organize um fichamento", "text": "Monte cinco campos: pergunta do estudo, método, principais resultados, limitações e dúvidas para discussão. Preencha com suas próprias palavras e volte ao texto original sempre que uma conclusão parecer maior do que os dados apresentados." },
+      { "title": "Registre as dúvidas", "text": "O que ficou pouco claro? Que informação você procuraria em outra publicação? Que aspecto merece discussão com o professor? Um fichamento útil também registra o que você ainda precisa compreender." },
+      { "title": "Compartilhe com contexto", "text": "Ao apresentar ao grupo, inclua o link original e deixe claro onde termina a descrição do artigo e começa a sua interpretação. Este roteiro é uma sugestão de organização do estudo, não um instrumento validado de avaliação metodológica." }
+    ],
+    "sources": [ { "label": "NLM — Como salvar resultados e exportar referências", "url": "https://pubmed.ncbi.nlm.nih.gov/help/#save-citations" } ]
+  },
+  {
+    "slug": "primeira-busca-pubmed",
+    "category": "Pesquisa",
+    "title": "Sua primeira busca no PubMed, passo a passo.",
+    "description": "Como combinar conceitos, refinar resultados e guardar uma estratégia de busca.",
+    "minutes": 4,
+    "art": "pubmed",
+    "sections": [
+      { "title": "Escolha os conceitos", "text": "Para explorar literatura sobre educação em Ortodontia, por exemplo, você pode começar com orthodontics e education. O exemplo é uma atividade de familiarização com a ferramenta; não representa uma busca sistemática completa." },
+      { "title": "Combine e ajuste", "text": "O operador AND combina conceitos; OR permite reunir termos alternativos. No PubMed, escreva os operadores em maiúsculas. Leia o guia oficial para entender o processamento da consulta e observe os detalhes da busca antes de reutilizar a estratégia." },
+      { "title": "Use os filtros com intenção", "text": "A ferramenta permite refinar por data, tipo de artigo e outros critérios. Registre cada filtro aplicado. Restringir a consulta pode excluir resultados relevantes, por isso confira se o critério combina com seu objetivo." },
+      { "title": "Salve e retome", "text": "Use os recursos de exportação ou copie a referência completa. Guarde a consulta e a data junto às suas anotações. Para trabalhos formais, desenvolva a estratégia com orientação docente e, quando disponível, apoio da biblioteca." }
+    ],
+    "sources": [ { "label": "NLM — Operadores e estratégias de busca", "url": "https://pubmed.ncbi.nlm.nih.gov/help/#combining-search-terms-with-boolean-operators-and-or-not" } ]
+  }
+]
