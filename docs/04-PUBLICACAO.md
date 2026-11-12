@@ -7,7 +7,7 @@ A pasta `dist/` contém a versão para produção: 12 páginas HTML, imagens, fo
 ## Antes do envio
 
 1. Confirme contatos, textos institucionais e conteúdos com a diretoria.
-2. Preencha o domínio em `content/site.json`.
+2. Confira o domínio já configurado em `content/site.json`, `CNAME` e `robots.txt`.
 3. Complete a página de privacidade com o responsável e as informações da hospedagem.
 4. Execute `npm run build` e `npm run check`.
 5. Teste navegação, inscrição, e-mail e redes sociais com os dados reais.
@@ -26,7 +26,7 @@ Não envie `content/`, `src/`, `scripts/`, `docs/` ou `output/` para o diretóri
 
 ## Hospedagens estáticas
 
-Para Netlify ou Cloudflare Pages, use `npm run build` como comando de geração e `dist` como pasta de publicação. O arquivo `_headers` atende provedores compatíveis. Para GitHub Pages, revise a publicação na raiz ou em subpasta e as regras de domínio antes de configurar as URLs canônicas. Não foi realizada implantação em nenhum desses serviços.
+Para Netlify ou Cloudflare Pages, use `npm run build` como comando de geração e `dist` como pasta de publicação. O arquivo `_headers` atende provedores compatíveis. Para a publicação existente no GitHub Pages, o domínio configurado é laomax.com.br. Preserve o arquivo CNAME e a estrutura relativa da pasta assets. Esta revisão foi preparada localmente.
 
 ## Conferência após publicar
 

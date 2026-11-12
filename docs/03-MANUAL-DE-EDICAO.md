@@ -36,7 +36,7 @@ Acrescente objetos ao array `board`:
 }
 ```
 
-Coloque a imagem na pasta indicada antes da geração. Use fotos com autorização e boa resolução. O enquadramento é vertical. Sem foto, o layout utiliza um símbolo gráfico. O campo `advisor` recebe o nome da orientação docente. Para informar o período da gestão, atualize o texto de apresentação da página em `src/pages.mjs`.
+Coloque a imagem na pasta indicada antes da geração. Use fotos com autorização e boa resolução. O enquadramento é vertical. Sem foto, o layout apresenta o nome, a função e a biografia disponível. O campo `advisor` recebe o nome da orientação docente. Para informar o período da gestão, atualize o texto de apresentação da página em `src/pages.mjs`.
 
 ## Eventos
 
@@ -72,7 +72,7 @@ Edite `content/articles.json`. Campos:
 - `slug`: identificador único, sem espaços ou acentos.
 - `category`: Pesquisa ou Vida acadêmica, conforme os filtros atuais.
 - `title`, `description`, `minutes`: título, resumo e leitura aproximada.
-- `art`: `search`, `reading` ou `pubmed`, estilos de capa gráfica.
+- `art` pertence às capas da versão anterior e pode ser omitido.
 - `sections`: lista de objetos com `title` e `text`.
 - `sources`: lista de objetos com `label` e `url` HTTPS.
 

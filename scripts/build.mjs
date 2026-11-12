@@ -21,7 +21,7 @@ for (const [file, html] of Object.entries(pages)) {
   await writeFile(resolve(root, file), html);
   await writeFile(resolve(root, 'dist', file), html);
 }
-for (const file of ['assets', 'robots.txt', '_headers', '.htaccess']) await cp(resolve(root, file), resolve(root, 'dist', file), { recursive: true });
+for (const file of ['assets', 'robots.txt', 'CNAME', '_headers', '.htaccess']) await cp(resolve(root, file), resolve(root, 'dist', file), { recursive: true });
 const origin = site.url ? new URL(site.url).origin : '';
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${origin ? Object.keys(pages).filter(p => p !== '404.html').map(p => `<url><loc>${origin}/${p === 'index.html' ? '' : p}</loc></url>`).join('') : ''}</urlset>\n`;
 await writeFile(resolve(root, 'sitemap.xml'), xml);

@@ -8,12 +8,13 @@
   "photography": {
     "path": "assets/images/odontologia.jpg",
     "source": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=85",
-    "usage": "Ilustrativa, não representa atividade LAOMAX",
+    "usage": "Material preservado da versão anterior, fora das páginas da revisão.",
     "license": "https://unsplash.com/license",
     "individualAttribution": "A confirmar antes do lançamento"
   },
   "fonts": {
     "DM Sans": "SIL Open Font License; licença em assets/fonts/DM-Sans-LICENSE.txt",
-    "Libre Caslon Display": "SIL Open Font License; licença em assets/fonts/Libre-Caslon-Display-LICENSE.txt"
+    "Libre Caslon Display": "SIL Open Font License; licença em assets/fonts/Libre-Caslon-Display-LICENSE.txt",
+    "Spectral": "Spectral Semibold, SIL Open Font License, assets/fonts/Spectral-LICENSE.txt"
   }
 }

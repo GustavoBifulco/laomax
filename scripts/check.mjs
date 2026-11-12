@@ -22,6 +22,7 @@ for (const [file, expected] of Object.entries(pages)) {
   for (const [, href] of actual.matchAll(/\b(?:href|src)="([^"]*)"/g)) {
     assert.ok(href, `Link vazio em ${file}`);
     if (/^(https:|mailto:|tel:|data:)/.test(href)) continue;
+    if (href === '/' && file === '404.html') continue; // Base de resolução da página de erro.
     const [path, hash] = href.split('#');
     const target = path ? resolve(root, dirname(file), path) : resolve(root, file);
     assert.ok((await stat(target)).isFile(), `Recurso ausente: ${file} → ${href}`);

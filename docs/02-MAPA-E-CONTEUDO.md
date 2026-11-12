@@ -3,7 +3,7 @@
 | Arquivo | Objetivo | Estado do conteúdo |
 | --- | --- | --- |
 | index.html | Apresentar a marca e orientar a visita | Concluído, com agenda em espera |
-| a-liga.html | Apresentar propósito, pilares e identidade | Texto proposto para revisão da liga |
+| a-liga.html | Apresentar a liga, a área de estudo e o selo | Texto proposto para revisão da liga |
 | atividades.html | Exibir agenda e links de inscrição | Estrutura funcional; eventos não informados |
 | caderno.html | Explorar publicações por busca e categoria | Três guias introdutórios |
 | artigo-onde-buscar-artigos.html | Introduzir PubMed e SciELO | Texto completo; revisão editorial pendente |
@@ -12,7 +12,7 @@
 | diretoria.html | Apresentar nomes e funções da gestão | Estrutura pronta; composição não informada |
 | participar.html | Explicar oportunidades e seleção | Sem anunciar inscrição inexistente |
 | contato.html | Disponibilizar contatos e parcerias | Instagram integrado; demais canais aguardando confirmação |
-| privacidade.html | Explicar a operação desta versão | Falta identificação do responsável e hospedagem |
+| privacidade.html | Explicar a operação desta versão | GitHub Pages identificado, contato da liga disponível |
 | 404.html | Recuperar a navegação em um endereço inexistente | Concluído |
 
 ## Campos que precisam de informação oficial
@@ -23,7 +23,7 @@
 4. Estatuto aprovado e edital vigente, quando existirem.
 5. Eventos: título, categoria, início, término, local, descrição e URL oficial.
 6. Parceiros e autorização de uso de suas marcas.
-7. Domínio definitivo, responsável pelo site e hospedagem.
+7. Responsável pelo site na gestão.
 
 ## Política editorial proposta
 

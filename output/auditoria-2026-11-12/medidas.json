@@ -1,0 +1,321 @@
+{
+  "date": "2026-11-12",
+  "desktop": {
+    "lanuc": {
+      "h1": [
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "Onde a teoria encontra a prática",
+          "weight": "400"
+        },
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "A liga",
+          "weight": "400"
+        },
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "Eventos",
+          "weight": "400"
+        },
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "Caderno Clínico",
+          "weight": "400"
+        },
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "Marcas parceiras",
+          "weight": "400"
+        },
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "Comissão 2026",
+          "weight": "400"
+        },
+        {
+          "font": "\"Young Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+          "lineHeight": "92.8256px",
+          "size": "94.72px",
+          "text": "Participe",
+          "weight": "400"
+        }
+      ],
+      "nav": [
+        {
+          "height": 36,
+          "size": "17px",
+          "text": "LANUC"
+        },
+        {
+          "height": 24,
+          "size": "15px",
+          "text": "A liga"
+        },
+        {
+          "height": 24,
+          "size": "15px",
+          "text": "Eventos"
+        },
+        {
+          "height": 24,
+          "size": "15px",
+          "text": "Caderno Clínico"
+        },
+        {
+          "height": 24,
+          "size": "15px",
+          "text": "Loja"
+        },
+        {
+          "height": 24,
+          "size": "15px",
+          "text": "Parceiros"
+        },
+        {
+          "height": 24,
+          "size": "15px",
+          "text": "Comissão"
+        },
+        {
+          "height": 40,
+          "size": "15px",
+          "text": "Participar"
+        }
+      ],
+      "paragraphs": [
+        {
+          "color": "rgb(180, 201, 172)",
+          "lineHeight": "29.76px",
+          "size": "19.2px",
+          "text": "Liga Acadêmica de Nutrição Clínica da UNICID. Estudantes do Tatuapé que leem ciência juntos, aprendem com quem atende e levam a nutrição para fora da sala de aula.",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(19, 38, 25)",
+          "lineHeight": "24px",
+          "size": "15px",
+          "text": "Entre Artigos: pós-graduação",
+          "weight": "500"
+        },
+        {
+          "color": "rgb(94, 122, 99)",
+          "lineHeight": "27.2px",
+          "size": "17px",
+          "text": "A nutricionista Bianca Schimenes compartilha experiências e informações sobre o universo da pós-graduação. Para quem quer seguir na pesquisa acadêmica ou só entender melhor as opçõ",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(47, 90, 62)",
+          "lineHeight": "45.312px",
+          "size": "38.4px",
+          "text": "A LANUC promove o aprendizado, a pesquisa científica e a troca de conhecimentos entre estudantes e profissionais de Nutrição, por meio de palestras, eventos e ações educativas.",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(94, 122, 99)",
+          "lineHeight": "27.2px",
+          "size": "17px",
+          "text": "Os carrosséis da LANUC organizados para ler com calma, card por card, com as referências de cada post.",
+          "weight": "400"
+        }
+      ],
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    "laomax": {
+      "h1": [
+        {
+          "font": "\"Libre Caslon\", Georgia, serif",
+          "lineHeight": "119.194px",
+          "size": "122.88px",
+          "text": "LAOMAXUm novo olharpara a Ortodontia.",
+          "weight": "400"
+        }
+      ],
+      "logo": {
+        "bottom": 652.59375,
+        "height": 475.59375,
+        "left": 702.578125,
+        "right": 1178.171875,
+        "top": 177,
+        "width": 475.59375,
+        "x": 702.578125,
+        "y": 177
+      },
+      "nav": [
+        {
+          "height": 53,
+          "size": "16px",
+          "text": "LAOMAXUNICID · ODONTOLOGIA"
+        },
+        {
+          "height": 18.140625,
+          "size": "11px",
+          "text": "A liga"
+        },
+        {
+          "height": 18.140625,
+          "size": "11px",
+          "text": "Atividades"
+        },
+        {
+          "height": 18.140625,
+          "size": "11px",
+          "text": "Caderno acadêmico"
+        },
+        {
+          "height": 18.140625,
+          "size": "11px",
+          "text": "Diretoria"
+        },
+        {
+          "height": 53.34375,
+          "size": "11px",
+          "text": "Faça parte ↗"
+        }
+      ],
+      "paragraphs": [
+        {
+          "color": "rgb(100, 102, 94)",
+          "lineHeight": "23.4px",
+          "size": "13px",
+          "text": "Curiosidade que conecta. Ciência que inspira.Uma formação que vai além da sala de aula.",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(100, 102, 94)",
+          "lineHeight": "21.45px",
+          "size": "13px",
+          "text": "A LAOMAX é um ponto de encontro para quem quer ampliar o olhar sobre a Ortodontia e a Ortopedia Funcional dos Maxilares.",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(100, 102, 94)",
+          "lineHeight": "19.8px",
+          "size": "12px",
+          "text": "Um espaço para aprofundar o estudo da Ortodontia e da Ortopedia Funcional dos Maxilares.",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(100, 102, 94)",
+          "lineHeight": "19.8px",
+          "size": "12px",
+          "text": "Leitura científica e boas perguntas como ponto de partida para construir conhecimento.",
+          "weight": "400"
+        },
+        {
+          "color": "rgb(100, 102, 94)",
+          "lineHeight": "19.8px",
+          "size": "12px",
+          "text": "A aproximação entre universidade e comunidade como horizonte da formação acadêmica.",
+          "weight": "400"
+        }
+      ],
+      "subtitle": {
+        "size": "51.84px"
+      },
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    }
+  },
+  "caderno": {
+    "lanuc": {
+      "inputs": [
+        {
+          "height": 22,
+          "label": null,
+          "size": "16px"
+        }
+      ],
+      "visibleText": [
+        {
+          "size": "19.2px",
+          "text": "Os posts científicos da LANUC no Instagram, organizados para ler com calma. Leia card por card, como no Instagram, ou em"
+        }
+      ]
+    },
+    "laomax": {
+      "firstCardTop": 689.328125,
+      "inputs": [
+        {
+          "height": 46.796875,
+          "label": null,
+          "size": "12px"
+        }
+      ],
+      "visibleText": [
+        {
+          "size": "15px",
+          "text": "Um espaço para explorar a pesquisa, organizar o estudo e cultivar a curiosidade científica."
+        },
+        {
+          "size": "13px",
+          "text": "3 publicações encontradas"
+        }
+      ]
+    }
+  },
+  "mobile": {
+    "lanuc": {
+      "actions": [
+        {
+          "height": 50,
+          "size": "16px",
+          "text": "Garantir ingresso grátis"
+        },
+        {
+          "height": 50,
+          "size": "16px",
+          "text": "Conhecer a liga"
+        }
+      ],
+      "descriptionSize": "17px",
+      "headingSize": "54px",
+      "overflow": false,
+      "viewport": {
+        "height": 720,
+        "width": 390
+      }
+    },
+    "laomax": {
+      "actions": [
+        {
+          "height": 59.34375,
+          "size": "11px",
+          "text": "Conheça a liga↗"
+        },
+        {
+          "height": 31.34375,
+          "size": "10px",
+          "text": "Explore as atividades↗"
+        }
+      ],
+      "brandSize": "74.1px",
+      "descriptionSize": "12px",
+      "messageSize": "38px",
+      "overflow": false,
+      "viewport": {
+        "height": 720,
+        "width": 390
+      }
+    }
+  },
+  "source": "LANUC ao vivo; LAOMAX local com index e primeiros 12 trechos CSS conferidos contra GitHub."
+}

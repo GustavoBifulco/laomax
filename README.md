@@ -17,7 +17,7 @@ Acesse **http://127.0.0.1:4173**. Não é necessário instalar dependências. Pa
 ## O que foi entregue
 
 - Início com a nova identidade e os principais caminhos de navegação.
-- A liga: apresentação, pilares e identidade visual.
+- A liga: apresentação e identidade visual.
 - Atividades: agenda com filtros e suporte a inscrição e download de calendário quando houver eventos cadastrados.
 - Caderno acadêmico: três guias completos, busca e filtros por categoria.
 - Três páginas individuais de leitura, com índice e referências.
@@ -47,9 +47,10 @@ Os HTMLs da raiz e de `dist/` são gerados. Alterações permanentes no layout d
 - [Identidade, arquivos e fontes](docs/05-IDENTIDADE-E-CREDITOS.md)
 - [Pendências para lançamento](docs/06-CHECKLIST-DE-LANCAMENTO.md)
 - [Verificação da entrega](docs/07-VERIFICACAO.md)
+- [Comparação da primeira versão com a LANUC](docs/08-COMPARACAO-COM-LANUC.md)
 
 ## Situação da entrega
 
-A implementação é local. A publicação online não foi solicitada nem realizada. O Instagram oficial @laomax_unicid está integrado. E-mail, WhatsApp, diretoria, datas de eventos, estatuto, parceiros e edital não foram fornecidos e permanecem sem preenchimento. O site apresenta estados de espera claros nesses espaços.
+O GitHub Pages publica a raiz da branch `main` em [laomax.com.br](https://laomax.com.br/). O Instagram oficial @laomax_unicid está integrado. E-mail, WhatsApp, diretoria, datas de eventos, estatuto, parceiros e edital não foram fornecidos e permanecem sem preenchimento. O site apresenta estados de espera claros nesses espaços.
 
-O caderno contém textos introdutórios preparados nesta entrega, com fontes e indicação de revisão editorial pendente. O site não possui banco de dados, área de membros, checkout, envio de mensagens ou emissão de certificados. Inscrições podem ser conectadas a uma plataforma externa oficial. A página de privacidade deve receber a identificação do responsável e as informações da hospedagem antes do lançamento público.
+O caderno contém textos introdutórios preparados nesta entrega, com fontes e indicação de revisão editorial pendente. O site não possui banco de dados, área de membros, checkout, envio de mensagens ou emissão de certificados. Inscrições podem ser conectadas a uma plataforma externa oficial. A página de privacidade deve receber a identificação do responsável da liga. O GitHub Pages está identificado.

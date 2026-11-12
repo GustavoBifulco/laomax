@@ -1,0 +1,366 @@
+{
+  "layouts": [
+    {
+      "f": "404.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "a-liga.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "artigo-onde-buscar-artigos.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "artigo-organizar-leitura-cientifica.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "artigo-primeira-busca-pubmed.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "atividades.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "caderno.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "contato.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "diretoria.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "index.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "participar.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "privacidade.html",
+      "width": 1280,
+      "scroll": 1280,
+      "broken": 0
+    },
+    {
+      "f": "404.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "a-liga.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "artigo-onde-buscar-artigos.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "artigo-organizar-leitura-cientifica.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "artigo-primeira-busca-pubmed.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "atividades.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "caderno.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "contato.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "diretoria.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "index.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "participar.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "privacidade.html",
+      "width": 390,
+      "scroll": 390,
+      "broken": 0
+    },
+    {
+      "f": "404.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "a-liga.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "artigo-onde-buscar-artigos.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "artigo-organizar-leitura-cientifica.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "artigo-primeira-busca-pubmed.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "atividades.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "caderno.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "contato.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "diretoria.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "index.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "participar.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "privacidade.html",
+      "width": 320,
+      "scroll": 320,
+      "broken": 0
+    },
+    {
+      "f": "404.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "a-liga.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "artigo-onde-buscar-artigos.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "artigo-organizar-leitura-cientifica.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "artigo-primeira-busca-pubmed.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "atividades.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "caderno.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "contato.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "diretoria.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "index.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "participar.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "privacidade.html",
+      "width": 768,
+      "scroll": 768,
+      "broken": 0
+    },
+    {
+      "f": "404.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "a-liga.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "artigo-onde-buscar-artigos.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "artigo-organizar-leitura-cientifica.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "artigo-primeira-busca-pubmed.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "atividades.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "caderno.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "contato.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "diretoria.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "index.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "participar.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    },
+    {
+      "f": "privacidade.html",
+      "width": 901,
+      "scroll": 901,
+      "broken": 0
+    }
+  ],
+  "violations": [],
+  "errors": []
+}

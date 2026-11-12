@@ -1,33 +1,21 @@
-# Verificação da entrega
+# Verificação da revisão visual
 
-Registro atualizado em 12/11/2026.
+Conferência feita em 12 de novembro de 2026. As capturas desta revisão estão em [output/revisao-visual](../output/revisao-visual/). As imagens em output/qa e output/auditoria-2026-11-12 registram a versão anterior.
 
-## Resultados observados
+## Navegação e leitura
 
-- `npm run build`: 12 páginas geradas e pacote `dist/` preparado.
-- `npm run check`: 12 páginas e 331 referências locais verificadas; âncoras, metadados, dados estruturados, igualdade do pacote e integridade do selo aprovados.
-- Verificação de sintaxe de JavaScript: aprovada.
-- HTTP local: página inicial com resposta 200 e endereço inexistente com resposta 404.
-- Todas as 12 páginas visitadas em largura de 390 pixels, com um título principal por página, sem excesso de largura e sem imagens quebradas detectadas.
-- Início, caderno, participação, publicação e contato conferidos também em larguras de 320, 768 e 1280 pixels, sem excesso de largura detectado.
-- Menu móvel: abertura, fechamento por Escape e retorno do foco ao botão confirmados.
-- Busca do caderno: resultados, ausência de resultados e consulta sem acento confirmados. `academica` encontra a publicação de Vida acadêmica.
-- Filtros: Pesquisa retorna dois guias; Todos retorna três; a seleção combinada com busca funciona.
-- Perguntas frequentes: abertura por clique e fechamento por teclado confirmados.
-- Agenda: filtro e download `.ics` testados com um evento fictício isolado, fora do pacote público. Conversão de horário de Brasília para UTC confirmada no arquivo baixado. O evento não foi cadastrado no site e a página temporária foi removida.
-- Instagram informado pelo usuário integrado em rodapé, contato e participação, com abertura em nova aba identificada. Não foi enviada nenhuma mensagem.
-- Nenhum erro registrado no console nas páginas verificadas.
-- Capturas em computador e celular salvas em `output/qa/`.
-- Paleta conferida a partir dos tons do selo. Variações de laranja para títulos e textos preservam contraste nos fundos utilizados; a faixa laranja usa texto escuro.
-- Nenhum texto, contato, evento ou marca da LANUC presente nos HTMLs públicos. A referência é registrada apenas na documentação.
-- Original do logo idêntico ao arquivo fornecido no Desktop, comparado por SHA-256.
+- As 12 páginas foram abertas no Chrome com larguras de 320, 390, 768, 901 e 1280 pixels. Foram conferidas a largura do documento e a carga das imagens em 60 combinações.
+- Em 390 e 1280 pixels, as 12 páginas passaram por verificações automáticas com axe para as regras WCAG 2 A, 2 AA e 2.1 AA disponíveis. Resultados brutos em [verificacao.json](../output/revisao-visual/verificacao.json).
+- A inspeção visual incluiu a abertura nas duas orientações de layout, a busca do caderno, a página de participação e o menu móvel. O enquadramento da mandíbula foi ajustado para preservar a borda da gravura.
+- A abertura usa texto corrido de 18 px em 390 pixels e 19,2 px em 1280 pixels. A navegação principal de computador usa 16 px. O menu móvel ocupa a tela e mantém o foco na navegação até o fechamento.
+- Navegação com teclado, fechamento por Escape e retorno do foco ao botão foram exercitados. Com JavaScript desabilitado, os links de navegação e as leituras continuam disponíveis.
+- Busca sem acentos, pesquisa sem resultados, filtros de categoria, índice de artigo e perguntas frequentes foram exercitados.
+- O botão de participação leva ao Instagram informado pela liga.
+- Uma simulação de evento e edital, fora dos arquivos públicos, verificou as categorias, o formulário externo, o edital e o download para calendário. Uma atividade às 9h de Brasília foi exportada para 12h UTC.
+- O servidor local respondeu 404 para endereço inexistente em subpasta e o link de retorno levou à página inicial.
 
-## Verificador de arquivos
+## Arquivos e publicação
 
-Execute `npm run check` após qualquer alteração. Ele confere páginas regeneradas, igualdade com o pacote `dist/`, referências locais, âncoras, título principal, metadados, dados estruturados e integridade do original do selo.
+O comando `npm run check` verifica se a geração das páginas está atualizada, a integridade do selo, as referências locais, as âncoras e a correspondência entre os arquivos de origem e o pacote. O domínio configurado no projeto e no sitemap é laomax.com.br.
 
-## Limites
-
-A verificação local não substitui a conferência na hospedagem definitiva, a revisão editorial ou os testes dos canais de inscrição e contato reais. Integrações externas não podem ser consideradas operacionais enquanto seus destinos não forem informados e testados. Uma avaliação automática de acessibilidade, quando executada, não constitui certificação de conformidade.
-
-Não foi executada auditoria automática completa de acessibilidade nem teste de importação em todos os aplicativos de calendário. A opção de redução de movimento e os estilos de impressão estão implementados; sua presença não equivale a uma certificação de compatibilidade em todos os navegadores.
+A conferência por HTTPS encontrou a página anterior servida pelo GitHub Pages. A implantação desta revisão é uma etapa separada. As verificações de navegador foram feitas no Chrome em larguras simuladas. A revisão dos guias e a confirmação de membros, datas e inscrições cabem à liga.

@@ -20,14 +20,13 @@
 - [ ] Cadastrar eventos reais e URLs corretas.
 - [ ] Cadastrar edital e formulário quando houver seleção.
 - [ ] Revisar e aprovar a apresentação institucional e os três guias.
-- [ ] Validar a fotografia ilustrativa ou substituir por imagem própria autorizada.
 - [ ] Aprovar os textos e as marcas de parcerias, se houver.
 
 ## Publicação e operação
 
-- [ ] Definir domínio e hospedagem.
+- [x] Confirmar laomax.com.br e GitHub Pages.
 - [ ] Identificar responsável e práticas do provedor na página de privacidade.
-- [ ] Gerar novamente o site com o domínio configurado.
+- [x] Gerar o site com o domínio configurado.
 - [ ] Fazer cópia da versão pública anterior, se existir.
 - [ ] Enviar o pacote ao domínio correto.
 - [ ] Testar no endereço público e em aparelhos reais.
