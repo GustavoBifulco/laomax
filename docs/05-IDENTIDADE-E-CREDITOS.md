@@ -14,18 +14,18 @@
 
 | Aplicação | Cor |
 | --- | --- |
-| Fundo de leitura | `#fbf9f4` |
-| Texto e abertura escura | `#22221f` |
+| Fundo de leitura | `#fffdfa` |
+| Texto e abertura escura | `#29241f` |
 | Texto secundário | `#55534d` |
-| Botão principal | `#ff8039` |
-| Fundo da gravura | `#f68c50` |
-| Laranja para leitura sobre fundo claro | `#a43a09` |
+| Botão principal | `#9d3b0b` |
+| Fundo da abertura | `#f7f1ea` |
+| Laranja para leitura sobre fundo claro | `#9d3b0b` |
 
-As variações de laranja foram escolhidas para acompanhar a gravura e oferecer contraste em tela. O selo fornecido é a referência de cor e de desenho. Na abertura, a página amplia apenas a mandíbula por meio de um recorte de exibição. A página “A liga” apresenta o selo inteiro.
+As variações de laranja foram escolhidas para acompanhar a gravura e oferecer contraste em tela. O selo fornecido é a referência de cor e de desenho. A abertura utiliza a imagem ilustrativa de um modelo ortodôntico, gerada para esta revisão. Ela não representa paciente, aula ou equipamento da UNICID. A página “A liga” apresenta o selo inteiro.
 
 - Spectral Semibold nos títulos. Fonte e licença disponíveis no [repositório Google Fonts](https://github.com/google/fonts/tree/main/ofl/spectral).
 - DM Sans no texto e na navegação. Licenças junto aos arquivos em `assets/fonts/`.
-- A fotografia ilustrativa e a Libre Caslon Display fazem parte do material da versão anterior. As páginas atuais usam somente a arte da LAOMAX e as fontes indicadas acima.
+- A fotografia ilustrativa e a Libre Caslon Display fazem parte do material da versão anterior. A imagem do modelo de estudo está em assets/images/modelo-ortodontico.webp.
 
 ## Referências de conteúdo
 

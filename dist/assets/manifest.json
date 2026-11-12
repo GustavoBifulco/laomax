@@ -16,5 +16,10 @@
     "DM Sans": "SIL Open Font License; licença em assets/fonts/DM-Sans-LICENSE.txt",
     "Libre Caslon Display": "SIL Open Font License; licença em assets/fonts/Libre-Caslon-Display-LICENSE.txt",
     "Spectral": "Spectral Semibold, SIL Open Font License, assets/fonts/Spectral-LICENSE.txt"
+  },
+  "illustration": {
+    "path": "assets/images/modelo-ortodontico.webp",
+    "source": "Imagem ilustrativa gerada para o site",
+    "description": "Modelo de estudo ortodôntico em gesso sobre base cor de terracota."
   }
 }

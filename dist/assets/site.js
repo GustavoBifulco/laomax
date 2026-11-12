@@ -42,13 +42,14 @@
     const empty = target.querySelector('[data-empty]');
     const status = document.querySelector(group.dataset.status);
     const search = document.querySelector(group.dataset.search);
+    const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+    const searchable = items.map(item => normalize(item.textContent + ' ' + (item.dataset.terms || '')));
     let category = 'Todos';
     function update() {
-      const query = (search?.value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+      const terms = normalize(search?.value || '').split(/\s+/).filter(Boolean);
       let count = 0;
-      items.forEach(item => {
-        const text = item.textContent.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-        const show = (category === 'Todos' || item.dataset.category === category) && text.includes(query);
+      items.forEach((item, index) => {
+        const show = (category === 'Todos' || item.dataset.category === category) && terms.every(term => searchable[index].includes(term));
         item.hidden = !show;
         if (show) count++;
       });
@@ -60,6 +61,11 @@
       group.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
       update();
     }));
+    target.querySelector('.reset-search')?.addEventListener('click', () => {
+      search.value = '';
+      group.querySelector('[data-filter="Todos"]').click();
+      search.focus();
+    });
     search?.addEventListener('input', update);
     update();
   });

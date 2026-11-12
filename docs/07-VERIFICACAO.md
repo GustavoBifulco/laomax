@@ -1,4 +1,10 @@
-# Verificação da revisão visual
+# Verificação da versão publicada
+
+A abertura, os estilos e os scripts são gerados em conjunto. O endereço dos estilos e do JavaScript inclui uma assinatura derivada de seu conteúdo para que uma atualização das páginas carregue os arquivos correspondentes.
+
+Os registros da revisão atual estão em [output/portal](../output/portal). As verificações abrangem navegação, leitura, filtragem, imagens e larguras de tela. As capturas e observações abaixo pertencem à versão anterior.
+
+# Histórico da revisão visual
 
 Conferência feita em 12 de novembro de 2026. As capturas desta revisão estão em [output/revisao-visual](../output/revisao-visual/). As imagens em output/qa e output/auditoria-2026-11-12 registram a versão anterior.
 

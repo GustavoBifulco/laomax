@@ -1,3 +1,14 @@
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+
+function versionedAsset(file) {
+  const bytes = readFileSync(new URL('../assets/' + file, import.meta.url));
+  const version = createHash('sha256').update(bytes).digest('hex').slice(0, 12);
+  return `assets/${file}?v=${version}`;
+}
+const stylesheet = versionedAsset('styles.css');
+const siteScript = versionedAsset('site.js');
+
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 }[c]));
@@ -7,20 +18,12 @@ const link = (href, label, cls = 'inline-link') =>
   `<a class="${cls}" href="${esc(href)}">${esc(label)} ${arrow('→')}</a>`;
 const external = (href, label, cls = 'inline-link') =>
   `<a class="${cls}" href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(label)} ${arrow('↗')}<span class="sr-only"> (abre em nova aba)</span></a>`;
-const navItems = [['a-liga.html', 'A liga'], ['atividades.html', 'Atividades'], ['caderno.html', 'Caderno acadêmico'], ['diretoria.html', 'Diretoria']];
+const allSections = [['a-liga.html', 'A liga'], ['atividades.html', 'Atividades'], ['caderno.html', 'Caderno acadêmico'], ['diretoria.html', 'Diretoria']];
 const bread = label => `<nav class="breadcrumb" aria-label="Caminho da página"><a href="index.html">Início</a><span aria-hidden="true">/</span><span>${esc(label)}</span></nav>`;
 const intro = (label, title, description) => `<div class="container page-intro">${bread(label)}<h1>${esc(title)}</h1><p class="lead">${esc(description)}</p></div>`;
 const wordmark = `<img src="assets/images/laomax-marca.webp" width="48" height="48" alt=""><span class="brand-type">LAOMAX<small>UNICID</small></span>`;
-const engraving = `<figure class="plate">
-  <svg class="engraving" viewBox="176 468 902 588" role="img" aria-label="Mandíbula em gravura, detalhe do selo da LAOMAX">
-    <defs><clipPath id="mandibula"><path d="M195 494 L363 496 Q394 513 404 605 Q413 662 485 674 Q624 714 771 665 Q846 653 861 600 Q879 510 920 492 L1040 491 L1051 636 L1009 695 L987 772 L951 845 L898 901 L815 969 L735 1020 L624 1033 L514 1020 L410 976 L325 904 L278 846 L248 776 L221 663 L195 579Z"/></clipPath></defs>
-    <image href="assets/images/laomax-gravura.webp" width="1254" height="1254" clip-path="url(#mandibula)"/>
-  </svg>
-  <figcaption><span>Mandíbula</span><span>Gravura do selo acadêmico</span></figcaption>
-</figure>`;
-
 function articleList(items) {
-  return items.map(a => `<article class="reading" data-category="${esc(a.category)}">
+  return items.map(a => `<article class="reading" data-category="${esc(a.category)}" data-terms="${esc(a.sections.map(section => section.title + ' ' + section.text).join(' '))}">
     <div class="reading-meta"><span>${esc(a.category)}</span><small>${esc(a.minutes)} min de leitura</small></div>
     <div><h3><a href="artigo-${esc(a.slug)}.html">${esc(a.title)} ${arrow('→')}</a></h3><p>${esc(a.description)}</p></div>
   </article>`).join('');
@@ -38,6 +41,12 @@ function eventCard(e) {
 
 export function renderPages(site, articles) {
   const pages = {};
+  const navItems = allSections.filter(([url]) => {
+    if (url === 'atividades.html') return site.events.length > 0;
+    if (url === 'diretoria.html') return site.board.length > 0 || Boolean(site.advisor);
+    return true;
+  });
+  navItems.push(['contato.html', 'Contato']);
   const handle = site.instagram && '@' + new URL(site.instagram).pathname.split('/').filter(Boolean)[0];
   const instagram = (label = handle, cls = 'inline-link') => site.instagram ? external(site.instagram, label, cls) : link('contato.html', 'Contato com a liga', cls);
   const join = () => `<section class="join"><div class="container join-inner"><div><h2>Quer participar da LAOMAX?</h2><p>Acompanhe a seleção de membros e veja como propor uma atividade.</p></div>${link('participar.html','Como participar','button dark-button')}</div></section>`;
@@ -53,32 +62,36 @@ export function renderPages(site, articles) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 ${is404 ? '<base href="/"><script>if (location.protocol === "file:") document.querySelector("base").href = location.href;</script>' : ''}
 <title>${esc(title)}${file === 'index.html' ? '' : ' — LAOMAX'}</title>
-<meta name="description" content="${esc(description)}"><meta name="theme-color" content="#22221f">
+<meta name="description" content="${esc(description)}"><meta name="theme-color" content="#fcfaf7">
 <meta property="og:type" content="${article ? 'article' : 'website'}"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="LAOMAX">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}">
 ${canonical ? `<link rel="canonical" href="${esc(canonical)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:image" content="${esc(origin)}/assets/images/laomax-selo-original.png">` : ''}
 ${is404 ? '<meta name="robots" content="noindex">' : ''}<link rel="icon" href="assets/images/favicon.png"><link rel="preload" as="font" type="font/ttf" crossorigin href="assets/fonts/spectral-semibold.ttf">
-<link rel="stylesheet" href="assets/styles.css"><script src="assets/site.js" defer></script><script type="application/ld+json">${schema}</script>
+<link rel="stylesheet" href="${stylesheet}"><script src="${siteScript}" defer></script><script type="application/ld+json">${schema}</script>
 </head><body><a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
 <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="LAOMAX — início">${wordmark}</a>
 <button class="menu-toggle" hidden aria-expanded="false" aria-controls="main-nav"><span class="menu-label">Menu</span><i aria-hidden="true"></i></button>
 <nav id="main-nav" aria-label="Navegação principal">${[...navItems,['participar.html','Faça parte']].map(([url,label])=>`<a href="${url}"${url===current?' aria-current="page"':''}${url==='participar.html'?' class="nav-cta"':''}>${label}${url==='participar.html'?arrow('→'):''}</a>`).join('')}</nav></div></header>
 <main id="conteudo">${body}</main>
 <footer><div class="container footer-grid"><div><a class="brand" href="index.html">${wordmark}</a><p>${esc(site.fullName)} da UNICID.</p></div>
-<div><h2>Navegação</h2>${navItems.map(([u,l])=>`<a href="${u}">${l}</a>`).join('')}</div><div><h2>Contato</h2>${link('participar.html','Faça parte')}${link('contato.html','Contato e parcerias')}${site.instagram ? instagram() : ''}</div></div>
+<div><h2>Navegação</h2>${allSections.map(([u,l])=>`<a href="${u}">${l}</a>`).join('')}</div><div><h2>Contato</h2>${link('participar.html','Faça parte')}${link('contato.html','Contato e parcerias')}${site.instagram ? instagram() : ''}</div></div>
 <div class="container footer-end"><span>© ${new Date().getFullYear()} LAOMAX · UNICID</span><a href="privacidade.html">Privacidade</a></div></footer></body></html>\n`;
   }
 
   const upcoming = site.events.filter(e => new Date(e.end) >= new Date()).sort((a,b)=>Date.parse(a.start)-Date.parse(b.start));
   page('index.html','LAOMAX — Liga Acadêmica de Ortodontia e Ortopedia Funcional dos Maxilares',site.description,`
-    <section class="hero"><div class="container hero-inner"><div class="hero-copy">
-      <p class="hero-label">Liga acadêmica · UNICID</p><h1>Ortodontia e<br>Ortopedia Funcional<br>dos Maxilares<span>.</span></h1>
-      <p class="hero-lead">Conheça a LAOMAX, explore leituras para a graduação e acompanhe as oportunidades de participar da liga.</p>
-      <div class="actions">${link('a-liga.html','Conheça a liga','button accent-button')}${link('participar.html','Como participar','hero-link')}</div>
-    </div>${engraving}</div></section>
-    <section class="container section notebook-home"><div class="section-title"><div><p class="kicker">Leituras para a graduação</p><h2>Caderno acadêmico</h2></div>${link('caderno.html','Explorar o caderno')}</div>
+    <section class="hero"><div class="container hero-inner">
+      <div class="hero-copy"><p class="hero-label">Liga acadêmica de Odontologia</p>
+      <h1>Ortodontia <em>na UNICID.</em></h1>
+      <p class="hero-lead">A LAOMAX é a Liga Acadêmica de Ortodontia e Ortopedia Funcional dos Maxilares da UNICID.</p>
+      <div class="actions">${link('caderno.html','Ler os guias','button accent-button')}${link('a-liga.html','Sobre a liga','hero-link')}</div></div>
+      <figure class="study-model"><img src="assets/images/modelo-ortodontico.webp" width="1440" height="960" fetchpriority="high" alt="Ilustração de um modelo de estudo em gesso com aparelho ortodôntico."></figure>
+    </div></section>
+${upcoming.length ? `<section class="container section"><div class="section-title"><h2>Próximos encontros</h2>${link('atividades.html','Ver agenda')}</div>${upcoming.slice(0,2).map(eventCard).join('')}</section>` : ''}
+    <section class="container section study-index"><div class="study-intro"><p class="kicker">Caderno acadêmico</p><h2>Guias de estudo</h2>
+    <p>Escolha uma leitura para a etapa da pesquisa em que você está.</p>${link('caderno.html','Buscar no caderno')}</div>
     <div class="reading-list">${articleList(articles.slice(0,3))}</div></section>
-    <section class="agenda-band"><div class="container section split"><div><p class="kicker">Atividades</p><h2>Agenda da liga</h2></div><div>${upcoming.length ? upcoming.slice(0,2).map(eventCard).join('') + link('atividades.html','Ver toda a agenda') : `<p class="lead">Ainda não há encontros com data publicada.</p><p>Acompanhe os avisos da LAOMAX pelo canal oficial da liga.</p>${instagram()}`}</div></div></section>${join()}`);
+    ${join()}`);
 
   page('a-liga.html','A liga','Conheça a LAOMAX e a identidade da liga acadêmica da UNICID.',`
     ${intro('A liga','Sobre a LAOMAX',site.fullName + ' da UNICID.')}
@@ -98,7 +111,7 @@ ${is404 ? '<meta name="robots" content="noindex">' : ''}<link rel="icon" href="a
     ${intro('Caderno acadêmico','Caderno acadêmico','Guias para encontrar artigos, organizar suas leituras e pesquisar em bases científicas.')}
     <section class="container content-section"><div class="notebook-tools enhanced"><label class="search-field" for="search">Buscar no caderno<input type="search" id="search" placeholder="Ex. PubMed, fichamento"></label>
     <div class="filters" role="group" aria-label="Categoria da publicação" data-filter-group="#articles" data-search="#search" data-status="#search-status">${filters(['Todos',...new Set(articles.map(a=>a.category))])}</div></div>
-    <p id="search-status" class="result-count" role="status">${articles.length} publicações</p><div class="reading-list" id="articles">${articleList(articles)}<div data-empty hidden>${notice('Nenhum guia encontrado','Tente outro termo ou selecione outra categoria.')}</div></div>
+    <p id="search-status" class="result-count" role="status">${articles.length} publicações</p><div class="reading-list" id="articles">${articleList(articles)}<div data-empty hidden>${notice('Nenhum guia encontrado','Tente outro termo ou volte à lista completa.')}<button type="button" class="reset-search inline-link">Mostrar todos os guias</button></div></div>
     <p class="editorial-note">Guias introdutórios de estudo. Revisão editorial da liga pendente.</p></section>`);
 
   for (const a of articles) page(`artigo-${a.slug}.html`,a.title,a.description,`
@@ -106,6 +119,8 @@ ${is404 ? '<meta name="robots" content="noindex">' : ''}<link rel="icon" href="a
     <p class="kicker">${esc(a.category)} · ${esc(a.minutes)} min de leitura</p><h1>${esc(a.title)}</h1><p class="lead">${esc(a.description)}</p><p class="editorial-note">Guia introdutório · Revisão editorial da liga pendente</p></div>
     <div class="container article-layout"><aside><nav aria-label="Índice da publicação"><h2>Nesta leitura</h2>${a.sections.map((s,i)=>`<a href="#passo-${i+1}">${esc(s.title)}</a>`).join('')}</nav></aside><article class="prose">
     ${a.sections.map((s,i)=>`<section id="passo-${i+1}"><h2>${esc(s.title)}</h2><p>${esc(s.text)}</p></section>`).join('')}
+${a.worksheet ? `<section class="study-resource"><h2>Ficha de leitura</h2><p>Use o modelo para registrar a referência, os resultados e suas dúvidas ao ler um artigo.</p><a class="button" download="ficha-de-leitura-laomax.txt" href="${esc(a.worksheet)}">Baixar ficha editável ↓</a></section>` : ''}
+${a.exampleSearch ? `<section class="study-resource"><h2>Experimente a busca</h2><p>Abra o exemplo do guia e observe como os resultados mudam ao ajustar os termos.</p>${external(a.exampleSearch, 'Pesquisar no PubMed', 'button')}</section>` : ''}
     <section><h2>Fontes e recursos</h2><ul>${a.sources.map(s=>`<li>${external(s.url,s.label)}</li>`).join('')}</ul></section></article></div>
     <section class="container section related"><h2>Outras leituras</h2><div class="reading-list">${articleList(articles.filter(b=>b.slug!==a.slug))}</div></section>`,true);
 
@@ -125,7 +140,7 @@ ${is404 ? '<meta name="robots" content="noindex">' : ''}<link rel="icon" href="a
     <section class="container pathways"><article class="student"><p class="kicker">Para estudantes</p><h2>Seleção de membros</h2><p>${open?'As inscrições estão abertas. Consulte as etapas e os prazos da seleção.':'Ainda não há processo seletivo divulgado. Acompanhe o Instagram da liga para saber quando houver novidades.'}</p>
     ${open ? external(site.selection.url,'Acessar inscrição','button accent-button') : instagram('Acompanhar no Instagram','button accent-button')}
     ${site.selection.noticeUrl ? external(site.selection.noticeUrl,'Consultar edital') : ''}</article>
-    <article class="partner"><p class="kicker">Para parceiros</p><h2>Proponha uma atividade</h2><p>Conte à liga o tema do encontro, para quem ele se destina e de que forma você gostaria de colaborar.</p>${link('contato.html','Contato e parcerias')}</article></section>
+    <article class="partner"><p class="kicker">Para parceiros</p><h2>Proponha uma atividade</h2><p>Envie uma breve apresentação, o tema do encontro e o público que você quer alcançar.</p>${instagram('Falar com a liga')}</article></section>
     <section class="container section faq split"><h2>Perguntas frequentes</h2><div>${questions.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join('')}</div></section>`);
 
   const channels = [

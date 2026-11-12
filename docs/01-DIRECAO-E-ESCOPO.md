@@ -1,11 +1,9 @@
 # Direção visual da LAOMAX
 
-A abertura apresenta a especialidade da liga e dois caminhos para quem chega pela primeira vez. A gravura da mandíbula aparece como detalhe ampliado do selo, identificada na legenda. O selo completo identifica a liga no cabeçalho, na apresentação institucional e no rodapé.
+A abertura identifica a área de estudo e a UNICID. O modelo ortodôntico ilustrativo ocupa a parte direita em telas largas e aparece abaixo do texto em telas estreitas. O selo institucional completo permanece no cabeçalho, no rodapé e na apresentação da liga.
 
-A página inicial conduz aos guias do caderno, à agenda e à participação. A escala de leitura, os títulos diretos e a separação das opções para estudantes e parceiros respondem à comparação com a LANUC. A referência visual da primeira versão está documentada em [Comparação com a LANUC](08-COMPARACAO-COM-LANUC.md).
+Os dois primeiros destinos são os guias de estudo e a apresentação da LAOMAX. O menu principal dá acesso ao caderno, ao contato e à participação. A agenda e a diretoria entram no menu quando os respectivos dados forem cadastrados. Seus endereços continuam disponíveis no rodapé.
 
-Spectral Semibold compõe os títulos. DM Sans compõe o texto de leitura e os controles. O fundo escuro da abertura dá contraste ao título e às ações. Laranja identifica o desenho, os convites e os links em destaque. As páginas de leitura usam fundo claro.
+A página inicial destaca até dois encontros futuros quando há datas cadastradas. O caderno pesquisa títulos, resumos e seções dos guias. O guia de fichamento oferece um arquivo de texto editável. O guia sobre o PubMed permite abrir a consulta bibliográfica do exemplo.
 
-Os conteúdos institucionais identificam a UNICID, a área acadêmica e o Instagram fornecido. Eventos, membros da gestão, parceiros e inscrições aparecem conforme os dados cadastrados. As três leituras introdutórias trazem fontes e indicação de revisão editorial pendente.
-
-O projeto gera HTML estático e pode ser publicado no GitHub Pages. O gerador compartilha navegação, rodapé e conteúdo entre as doze páginas. A busca funciona no navegador e usa o mesmo catálogo exibido na página.
+O projeto usa fundo claro, acentos em laranja e a assinatura original da liga. DM Sans compõe a navegação e o texto corrido. Spectral identifica títulos e o destaque em itálico. As fontes e imagens são entregues com o site.

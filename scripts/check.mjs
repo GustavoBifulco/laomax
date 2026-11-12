@@ -23,7 +23,8 @@ for (const [file, expected] of Object.entries(pages)) {
     assert.ok(href, `Link vazio em ${file}`);
     if (/^(https:|mailto:|tel:|data:)/.test(href)) continue;
     if (href === '/' && file === '404.html') continue; // Base de resolução da página de erro.
-    const [path, hash] = href.split('#');
+    const [reference, hash] = href.split('#');
+    const path = reference.split('?')[0];
     const target = path ? resolve(root, dirname(file), path) : resolve(root, file);
     assert.ok((await stat(target)).isFile(), `Recurso ausente: ${file} → ${href}`);
     if (hash) assert.ok((await readFile(target, 'utf8')).includes(`id="${hash}"`), `Âncora ausente: ${file} → ${href}`);
