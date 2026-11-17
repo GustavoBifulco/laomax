@@ -15,11 +15,45 @@
   "fonts": {
     "DM Sans": "SIL Open Font License; licença em assets/fonts/DM-Sans-LICENSE.txt",
     "Libre Caslon Display": "SIL Open Font License; licença em assets/fonts/Libre-Caslon-Display-LICENSE.txt",
-    "Spectral": "Spectral Semibold, SIL Open Font License, assets/fonts/Spectral-LICENSE.txt"
+    "Spectral": "Spectral Semibold, SIL Open Font License, assets/fonts/Spectral-LICENSE.txt",
+    "Archivo Black": "SIL Open Font License; assets/fonts/Archivo-Black-LICENSE.txt"
   },
   "illustration": {
     "path": "assets/images/modelo-ortodontico.webp",
     "source": "Imagem ilustrativa gerada para o site",
     "description": "Modelo de estudo ortodôntico em gesso sobre base cor de terracota."
-  }
+  },
+  "updated": "2026-11-17",
+  "identity": [
+    {
+      "path": "assets/identidade/selo-mono.webp",
+      "sha256": "be25c27d2329595d35aa20d5e86bd194b42040c45a45976eb41b7f465f9bd37b",
+      "source": "Arte fornecida pelo usuário; versão WebP para o site"
+    },
+    {
+      "path": "assets/identidade/marca.webp",
+      "sha256": "1b0a3cad67b5423c7bc05d4526e45046dcc624f3fd811d27e27a65703bbc0712",
+      "source": "Arte fornecida pelo usuário; versão WebP para o site"
+    },
+    {
+      "path": "assets/identidade/selo-cor.webp",
+      "sha256": "3536e69febff8e088a0fd441e379bb66e0989eff1c0406a9db306bba144098bb",
+      "source": "Arte fornecida pelo usuário; versão WebP para o site"
+    },
+    {
+      "path": "assets/identidade/selo-fundo.webp",
+      "sha256": "7f8cc54de48ca2ff6a8bda915c9fa98c5428acc27f352ef434051d292601c90c",
+      "source": "Arte fornecida pelo usuário; versão WebP para o site"
+    },
+    {
+      "path": "assets/identidade/boas-vindas.webp",
+      "sha256": "d550edf06c16ac0739e04a3321e8acf61231b1f23ef1105b62b2d1e96040fdea",
+      "source": "Arte fornecida pelo usuário; versão WebP para o site"
+    },
+    {
+      "path": "assets/identidade/coffee-break.webp",
+      "sha256": "be4dea29b6371993d4cb9e254fea45396d14a9bd99068b2ddf6e6c5035ea6d33",
+      "source": "Arte fornecida pelo usuário; versão WebP para o site"
+    }
+  ]
 }
