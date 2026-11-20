@@ -80,3 +80,30 @@
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }));
 })();
+
+// Reconcile time-sensitive actions even when the static pages were built earlier.
+(() => {
+  function updateAvailability() {
+    const now = Date.now();
+    document.querySelectorAll('[data-event-end]').forEach(event => {
+      if (Date.parse(event.dataset.eventEnd) > now) return;
+      event.querySelector('[data-event-status]').textContent = 'Encerrado';
+      event.querySelector('[data-event-actions]').hidden = true;
+      if (event.closest('[data-upcoming-home]')) event.hidden = true;
+    });
+    document.querySelectorAll('[data-upcoming-home]').forEach(section => {
+      section.hidden = ![...section.querySelectorAll('[data-event-end]')].some(e => Date.parse(e.dataset.eventEnd) > now);
+    });
+    document.querySelectorAll('[data-selection-close]').forEach(selection => {
+      if (!selection.dataset.selectionClose || Date.parse(selection.dataset.selectionClose) > now) return;
+      selection.querySelector('[data-selection-action]')?.setAttribute('hidden', '');
+      selection.querySelector('[data-selection-status]').hidden = true;
+      const expired = selection.querySelector('[data-selection-expired]');
+      if (expired) expired.hidden = false;
+    });
+  }
+  updateAvailability();
+  window.addEventListener('pageshow', updateAvailability);
+  document.addEventListener('visibilitychange', updateAvailability);
+  setInterval(updateAvailability, 30000);
+})();

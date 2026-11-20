@@ -9,6 +9,7 @@ for (const field of ['url', 'instagram', 'selection']) if (!(field in site)) thr
 for (const value of [site.url, site.instagram, site.selection.url, site.selection.noticeUrl, site.statuteUrl, ...site.partners.map(p => p.url), ...site.events.map(e => e.url)]) {
   if (value && !/^https:\/\//.test(value)) throw new Error('Links públicos devem começar com https://');
 }
+if (site.selection.open && (!site.selection.url || !Number.isFinite(Date.parse(site.selection.closesAt)))) throw new Error('Seleção aberta exige URL e closesAt com prazo válido.');
 for (const event of site.events) {
   if (!/^[a-z0-9-]+$/.test(event.id)) throw new Error('ID do evento inválido');
   if (!['Ensino', 'Pesquisa', 'Extensão'].includes(event.category)) throw new Error('Categoria de evento inválida');

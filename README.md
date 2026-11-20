@@ -19,7 +19,7 @@ Acesse **http://127.0.0.1:4173**. Não é necessário instalar dependências. Pa
 - Início com a nova identidade e os principais caminhos de navegação.
 - A liga: apresentação e identidade visual.
 - Atividades: agenda com filtros e suporte a inscrição e download de calendário quando houver eventos cadastrados.
-- Caderno acadêmico: três guias completos, busca e filtros por categoria.
+- Caderno acadêmico: três guias introdutórios e busca. Os filtros por categoria aparecem a partir de seis guias.
 - Três páginas individuais de leitura, com índice e referências.
 - Diretoria: estrutura pronta para nomes, funções, biografias e fotos.
 - Participação: processo seletivo configurável, caminhos de participação e perguntas frequentes.

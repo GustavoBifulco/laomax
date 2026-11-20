@@ -59,7 +59,7 @@ Este exemplo documenta o formato, não um evento agendado. Use somente as catego
 
 ## Processo seletivo
 
-Em `selection`, preencha `url` com o formulário oficial e `noticeUrl` com o edital. Altere `open` para `true` apenas durante o período real de inscrição. Sem URL ou com `open: false`, a página permanece no estado de espera. Feche a seleção e gere novamente no fim do prazo.
+Em `selection`, preencha `url` com o formulário oficial, `noticeUrl` com o edital e `closesAt` com o prazo no formato ISO 8601 com fuso, como `2027-03-31T23:59:00-03:00`. Altere `open` para `true` durante o período de inscrição e publique. O navegador oculta o botão após o prazo. Para atualizar também o HTML servido, gere e publique novamente com `open: false`.
 
 ## Parceiros
 
